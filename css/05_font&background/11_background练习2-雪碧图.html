@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../reset.css">
+    <style>
+        a:link{
+            display: inline-block; /*图片需要宽高，但是行内元素不支持狂高*/
+            width: 420px;
+            height: 520px;
+            background-image: url("../../execise/pic/1.png");
+            background-color: red;
+        }
+        a:hover{
+            background-image: url('../../execise/pic/2.jpg');
+        }
+        a:active{
+            background-image: url('../../execise/pic/3.jpg');
+        }
+    </style>
+</head>
+<body>
+    <a href="javascript:;"></a>
+</body>
+</html>
+<!-- 知识点 -->
+<!-- 
+    总结：
+    1.第一次我们移到连接上的时候，显示出背景红色，为什么？
+        因为图片是外部资源，浏览器会按需加载外部需求。
+    2.如何解决上述问题呢？
+        我们可以把几张图片合成到一起，然后加载一张图片，通过改变背景图片的的摆列位置。
+        background-position: x y;x,y方向的移动。
+        这个技术在网页中应用十分广泛，被称为CSS-sprite 这种图我们成为雪碧图
+
+ -->
+
+ <!-- 
+     雪碧图的使用步骤:
+     1. 确定使用的图片
+     2. 测量需要的大小
+     3. 根据测量结果来创建元素
+     特点: 一次性加载，提升用户体验
+  -->
