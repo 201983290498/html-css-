@@ -1373,10 +1373,10 @@ background-position: 10px 10px;
 ```
 
 ## 6.背景颜色渐变
-  使用的属性background-image: linear-gradient(dir,color1,color2)
+  使用的属性background-image: linear-gradient(dir,color1,color2,color3....)
 - dir 可以是to right
 - dir 默认是从上向下
 - dir 可以设置成度数： 20deg deg表示度数
-
+- 渐变可以指定多个元素，每个元素默认平均分布
 
 
