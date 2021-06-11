@@ -1372,7 +1372,11 @@ background-position: 10px 10px;
 - 在设置背景图片的大小为contain(包含)
 ```
 
-
+## 6.背景颜色渐变
+  使用的属性background-image: linear-gradient(dir,color1,color2)
+- dir 可以是to right
+- dir 默认是从上向下
+- dir 可以设置成度数： 20deg deg表示度数
 
 
 
