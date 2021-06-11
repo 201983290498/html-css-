@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span[title=abc]{
+            color: blue;
+        }
+        [title=abb]{
+            color: red;
+        }
+        [title^=a]{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        [title*=a]{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+        <div>
+            <span title="abc">dasdas</span>
+            <p title='abb'>
+                <span>
+                    哈哈哈哈
+                </span>
+            </p>
+            <div>
+                <span title="abb">
+                    dasd
+                </span>
+            </div>
+        </div>
+        <span>hhh</span>
+</body>
+</html>

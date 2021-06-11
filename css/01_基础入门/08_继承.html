@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            background-color: yellow;
+        }
+        p::first-letter{
+            font-size: 40px;
+        }
+        p::after{
+            content: '>';
+            color: blue;
+        }
+        p::selection{
+            background-color: red;
+        }
+        p:hover{
+            font-size: 20px;
+        }
+        p:active{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem <span>ipsum</span> dolor sit amet consectetur adipisicing elit. Optio enim eum mollitia non! Mollitia nostrum cum nulla assumenda, aut accusamus repellat quasi optio itaque asperiores pariatur esse? Est, eveniet in./</p>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- 引入重置样式 -->
+    <link rel="stylesheet" href="../reset.css">
+    <!-- 引入图标字体 -->
+    <link rel="stylesheet" href="../css/static/fa/css/all.css">
+    <style>
+        body{
+            font: 12px/1.5 Microsoft YaHei;
+        }
+        .clearfix::before,
+        .clearfix::after{
+            clear:both
+        }
+        .top-bar-wrapper{
+            width: 100%;
+            background-color: #E3E4E5;
+            /* height: 30px; */
+            border-bottom: 1px soild #DDD;
+        }
+        .top-bar{            
+            line-height: 30px;
+            width: 1190px;
+            /* 居中 */
+            margin: 0 auto;
+            /* position: relative; */
+        }
+        .top-bar a,.top-bar span,.top-bar i{
+            text-decoration: none;
+            color: #999;
+        }
+        .top-bar a:hover,.top-bar .highlight{
+            color: red;
+        }
+        .location{
+            float: left;
+        }
+        .location .city-list{
+            width: 320px;
+            height: 436px;
+            border: 1px solid rgb(204,204,204);
+            background-color: white;
+            display: none;
+        }
+        .current-city{
+            padding:0px 8px;
+        }
+        .current-city:hover + .city-list{
+            display: block;
+            position: absolute;
+        }
+        .current-city:hover,.dragdown:hover{
+            background-color: white;
+        }
+        .shortcut{
+            /* 整体向右浮动 */
+            float: right;
+        }
+        ul li{
+            /* 内部的向左浮动 */
+            float:left;
+            padding: 0px 3px;
+        }
+        .location .fas{
+            font-size: 14px;
+            color: red;
+        }
+        .shortcut .line{
+            width: 1px;
+            height: 10px;
+            background-color: #999;
+            margin: 10px 12px;
+            margin-top: 11px;
+            margin-bottom: 0px;
+            padding: 0px;
+        }
+        .square1,.square2,.square3,.square4{
+            background-color: white;
+            display: none;
+            border: 1px solid rgb(204,204,204);
+        }
+        .square1{
+            width: 353px;
+            height: 230px;
+        }
+        .square2{
+            width: 196px;
+            height: 177px;
+        }
+        .square3{
+            width: 215px;
+            height: 342px;
+        }
+        .square4{
+            width: 1190px;
+            height: 225px;
+            top: 30px;
+            left: 250px;
+        }
+        .icon1:hover > .square1,.icon2:hover > .square2, .icon3:hover > .square3,.icon4:hover > .square4{
+            display: block;
+            position: absolute;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- 外围容器 -->
+    <div class="top-bar-wrapper">
+        <!-- 内部容器 -->
+        <div class="top-bar clearfix">
+            <!-- 左侧菜单 -->
+            <div class="location">
+                <div class="current-city">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <a href="javascript:;">北京</a>
+                </div>
+                <div class="city-list">
+
+                </div>
+            </div>
+            <!-- 右侧菜单,快捷方式 -->
+            <ul class="shortcut">
+                <li>
+                    <a href="javascript:;">你好，请登录</a>
+                    <a href="javascript:;" class="highlight">免费注册</a>
+                </li>
+
+                <!-- 分割线 -->
+                <li class="line"></li>
+                <li class="dragdown icon1">
+                    <a href="javascript:;">我的订单</a>
+                    <i class="fas fa-angle-down"></i>
+                    <div class="square1">
+                        
+                    </div>
+                </li>
+                
+                <li class="line"></li>
+                <li><a href="javascript:;">我的京东</a></li>
+                
+                <li class="line"></li>
+                <li><a href="javascript:;">京东会员</a></li>
+                
+                <li class="line"></li>
+                <li class="dragdown icon2">
+                    <a href="javascript:;" class="highlight">企业采购</a>
+                    <i class="fas fa-angle-down "></i>
+                    <div class="square2"></div>
+                </li>
+                
+                <li class="line"></li>
+                <li class="dragdown icon3">
+                    <span>客户服务</span>
+                    <i class="fas fa-angle-down"></i>
+                    <div class="square3"></div>
+                </li>
+                
+                <li class="line"></li>
+                <li class="dragdown icon4">
+                    <span>网站导航</span>
+                    <i class="fas fa-angle-down"></i>
+                    <div class="square4"></div>
+                </li>
+
+                <li class="line"></li>
+                <li>
+                    <span>手机京东</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

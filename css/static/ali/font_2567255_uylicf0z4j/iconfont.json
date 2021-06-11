@@ -1,0 +1,51 @@
+{
+  "id": "2567255",
+  "name": "no name",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "21479089",
+      "name": "文件",
+      "font_class": "002-file",
+      "unicode": "e6eb",
+      "unicode_decimal": 59115
+    },
+    {
+      "icon_id": "21479091",
+      "name": "文件",
+      "font_class": "004-file",
+      "unicode": "e6ed",
+      "unicode_decimal": 59117
+    },
+    {
+      "icon_id": "21479092",
+      "name": "文件",
+      "font_class": "007-file",
+      "unicode": "e6ee",
+      "unicode_decimal": 59118
+    },
+    {
+      "icon_id": "21479093",
+      "name": "文件",
+      "font_class": "006-file",
+      "unicode": "e6ef",
+      "unicode_decimal": 59119
+    },
+    {
+      "icon_id": "21479094",
+      "name": "文件",
+      "font_class": "008-file",
+      "unicode": "e6f0",
+      "unicode_decimal": 59120
+    },
+    {
+      "icon_id": "21479095",
+      "name": "文件",
+      "font_class": "005-file",
+      "unicode": "e6f1",
+      "unicode_decimal": 59121
+    }
+  ]
+}

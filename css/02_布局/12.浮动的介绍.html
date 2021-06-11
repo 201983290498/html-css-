@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            float: left;
+            /*
+                通过浮动，可以是元素向父元素的左侧或者右侧浮动，在父元素内部飘
+                    使用float,
+                    - 默认值 none 不浮动
+                    - left  元素向左浮动
+                注意: 设置浮动时，水平布局的等式不一定要完全成立,两个div就能在同一行。
+                    元素设置浮动以后会完全从文档流中脱离
+            */
+        }
+        .box2{
+            width: 400px;
+            height: 400px;
+            background-color: aqua;
+            float: right;
+        }
+        .box3{
+            width: 210px;
+            height: 210px;
+            background-color: orange;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+
+    </div>
+    <div class="box3">
+        sdadsadasdasdsadas
+    </div>
+    <div class="box2">
+
+    </div>
+
+</body>
+</html>

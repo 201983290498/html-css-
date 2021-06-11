@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../reset.css">
+    <style>
+        .outer{
+            border: 10px red solid;
+            /* display: inline-block; *//*宽度没了*/
+            overflow: auto;
+        }
+        .inner{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            float: left;
+        }
+        .inner1{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            /* float: left; */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">
+
+        </div>
+        <div class="inner"></div>
+    </div>
+
+    <div class="inner1">
+
+    </div>
+</body>
+</html>

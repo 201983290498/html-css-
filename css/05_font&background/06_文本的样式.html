@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 500px;
+            border:1px red solid;
+            text-align: center;
+            font-size: 40px;
+            line-height: 2;
+            text-align: justify;
+            text-decoration: overline red;
+
+            /* 单行显示，超出省略号 */
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow:ellipsis;
+        }
+        div:hover{
+            overflow:scroll;
+            text-overflow: clip;
+        }
+        span{
+            font-size: 10px;
+            /* 上下移 */
+            vertical-align: -10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia consequuntur, pariatur voluptatem impedit repudiandae tenetur, molestias iusto officiis asperiores eaque nesciunt ex natus nostrum eligendi saepe ipsam. Iure, cumque iste.</div>
+    <div>apsn asda Xx<span>dsadsa</span></fiv>
+
+</body>
+</html>

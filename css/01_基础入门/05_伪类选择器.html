@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul > li.first{
+            color: red;
+        }
+        ul li:first-child{
+            color: blue;
+        }
+        li:nth-child(3){
+            color: rgb(125, 10, 231);
+        }
+        li:nth-child(2n){
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 40px;
+        }
+        li:not(:nth-child(3)){
+            font-weight: 300;
+        }
+        /* 如何选择ul下的第一个li，且不管元素结构如何变化*/
+    </style>
+</head>
+<body>
+    <span>dsadas</span>
+    <!-- ul>li*5 -->
+    <ul>
+        <li>第一个</li>
+        <li class="first">第二个</li>
+        <li>第三个</li>
+        <li>第四个</li>
+        <li>第五个</li>
+    </ul>
+    <li>
+    第一个
+        <ul>
+            <li>a</li>
+            <li>v</li>
+            <li>c</li>
+            <li>q</li>
+            <li>s</li>
+        </ul>
+    </li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+</body>
+</html>

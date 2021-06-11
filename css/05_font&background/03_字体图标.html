@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体图标</title>
+    <link rel="stylesheet" href="../../reset.css">
+    <link rel="stylesheet" href="../static/fa/css/all.css">
+    <style>
+        li{
+            list-style: none;
+        }
+        li::before{
+            content: '\f1b0'; /*图标字体的编码*/
+            font-family: 'Font Awesome 5 Free'; /*说清楚是哪种字体*/
+            font-weight: 900;  /*照抄*/
+            color: blue;
+            margin-right: 10px;
+        }
+        .p1{
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>锄禾日当午</li>
+        <li>汗滴禾下土</li>
+        <li>谁知盘中餐</li>
+        <li>粒粒皆辛苦</li>
+    </ul>
+    <span class="p1">dasdas</span>
+    <span class="p2">dasd</span>
+    <span class="fas">&#xf0f3</span>
+</body>
+</html>

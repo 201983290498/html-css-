@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>闭包</h1>    
+</body>
+</html>
+
+<script>
+    function outter(){
+        let a1 = 0;//内部私有数据
+        let a2 = 1;//内部私有数据
+        return function inner(){//返回是一个方法，对外开放的方法,我们需要再次调用
+            return a2;
+        }
+    }
+    function fn5(){
+        console.dir(outter());//返回的是个为调用的方法
+        console.log(outter()())
+    }
+    fn5();
+
+    
+    // 闭包的应用场景:模拟私有方法和私有数据成员，
+    // 返回的是一个字典，包含了多个方法/数据
+    let makeCounter = function(){
+        let a1 = 0;//私有属性
+        function changeBy(val) {//私有方法
+            a1 += val;
+        }
+        return {//返回的是共有方法
+            add: function(val){
+                changeBy(val);
+            },
+            reduce: function(val){
+                changeBy(-1*val);
+            },
+            show: function(){
+                return a1;
+            }
+        }
+    }
+    let counter1 = makeCounter();
+    let couter2 = makeCounter();
+    counter1.add(1);
+    counter1.add(2);
+    console.log(counter1.show());
+    couter2.reduce(3);
+    console.log(couter2.show());
+    console.warn('警告');
+
+    // 闭包的应用场景：防抖和节流
+    // ..
+</script>
