@@ -30,47 +30,39 @@ Attributes:
     <!--与http协议有关,refresh定义重定向,和指定的等待时间-->
 ```
 
-
-
 ### \<html>
 
 #### 属性
 
 lang : 显示页面的语言,其中zh为中文,en为英文
 
-
-
 ### \<h1>
 
-​		一级标题-标签，网页搜索是最重要的东西。
+​    一级标题-标签，网页搜索是最重要的东西。
 
-##### \<hgroup>
+#### \<hgroup>
 
-​	给标签分组
-
-
+​  给标签分组
 
 ### \<em>
 
-​	语气的加重标签,是行内元素，不会独占一行
-
-
+​  语气的加重标签,是行内元素，不会独占一行
 
 ### \<strong>
 
-​	表示我们强调重要的内容。
+​  表示我们强调重要的内容。
 
 ### \<blockquote>
 
-​	表示常引用，块元素。
+​  表示常引用，块元素。
 
-##### \<q>
+#### \<q>
 
-​	引用元素,短引用。行内元素。
+​  引用元素,短引用。行内元素。
 
 ### \<p>
 
-​	段落标签，不能嵌入块标签。
+​  段落标签，不能嵌入块标签。
 
 ### 结构化元素
 
@@ -92,65 +84,53 @@ lang : 显示页面的语言,其中zh为中文,en为英文
 
 ### 列表\<ul>\<ol>
 
-​	\<ul>\<ol>无序列表，有序列表，\<li>列表项 
+​  \<ul>\<ol>无序列表，有序列表，\<li>列表项
 
-​	\<ul>中有属性对type="none"可以去除前面的黑点。**他们都是块元素**
-
-
+​  \<ul>中有属性对type="none"可以去除前面的黑点。**他们都是块元素**
 
 ### 超链接\<a>
 
-​	跳转到其他页面，或者跳转到该页面的其他位置。**是个行内元素，a标签中可以嵌套除了自身的任何元素**。
+​  跳转到其他页面，或者跳转到该页面的其他位置。**是个行内元素，a标签中可以嵌套除了自身的任何元素**。
 
-​	常用属性:	
+  常用属性:
 
-​		target: \_self,\_blank **在原页面跳转还是打开新的窗口**
+​  target: \_self,\_blank **在原页面跳转还是打开新的窗口**
 
-​		href: 超链接的地址，
+​   href: 超链接的地址，
 
-​	业内跳转地址
+​  业内跳转地址
 
-​		‘#’ 回到顶部：\<a href="#">回到顶部\</a>
+​    ‘#’ 回到顶部：\<a href="#">回到顶部\</a>
 
-​		'#id':跳到任意id处
+​    '#id':跳到任意id处
 
-​	可以使用**javascript:void(0);作为href的内容**，不会有任何作用
+​  可以使用**javascript:void(0);作为href的内容**，不会有任何作用
 
-​		**text-decoration: none,** 将超链接的下划线去了
+​    **text-decoration: none,** 将超链接的下划线去了
 
-​	color: 设置字体
-
-​		
-
-
-
-
+​  color: 设置字体
 
 ### \<img src=''>
 
-​	**引入图片，属于替换元素，排版上像行内元素，基于块和行之间。**
+​  **引入图片，属于替换元素，排版上像行内元素，基于块和行之间。**
 
-##### 属性：
+#### 属性
 
 - alt 图片的描述
 - src图片的引用地址
 - width指定宽度
 - height指定高度，一般只会限定一个，然后等比例缩放
 
-
-
-##### 图片格式:
+##### 图片格式
 
 - jpeg:不支持动图，色彩丰富不支持透明效果，**透明效果就是指背景是否透明**,要来显示照片
 - gif:颜色少，支持动图
 - png:颜色丰富，支持复杂透明，不支持动图
 - webp:专门用来表示网页中的图片的一种格式，具有所有优点，Google推出，**兼容性不好**
 
-
-
 ##### 超链接的本质
 
-​	获取文本内容，并解析。
+​  获取文本内容，并解析。
 
 ##### base64
 
@@ -160,13 +140,13 @@ lang : 显示页面的语言,其中zh为中文,en为英文
 
 ### 内联框架\<iframe>
 
-​	**在网页里面引入其他网页。**属于替代元素。
+​  **在网页里面引入其他网页。**属于替代元素。
 
 ### \<audio>,\<vedio>音频视频
 
-​	默认不允许用户操作的，代替元素。
+​  默认不允许用户操作的，代替元素。
 
-##### 属性
+#### 属性
 
 - controls:允许控制。不需要值。
 - autoplay:自动播放,不需要填值**,有的浏览器不支持**
@@ -182,8 +162,6 @@ lang : 显示页面的语言,其中zh为中文,en为英文
     当有多个文件时，从上到下找可以使用的第一个文件
 </audio>
 ```
-
-
 
 ### \<figure>
 
@@ -201,25 +179,19 @@ lang : 显示页面的语言,其中zh为中文,en为英文
 
 元素背后的文字，**当我们鼠标放到元素上去的时候显示的内容**。
 
-
-
-
-
 ## 基础知识
 
-​		不同版本的html声明，我们用<!doctype html>说明是html5版本的语言，写在网页最开头。
+​    不同版本的html声明，我们用<!doctype html>说明是html5版本的语言，写在网页最开头。
 
-​	字符的编码和解码需要字符集，我们用万国码utf-8
+​  字符的编码和解码需要字符集，我们用万国码utf-8
 
-​	vscode自动生成基础文档`!+TAB`
+​  vscode自动生成基础文档`!+TAB`
 
-​	html负责页面的结构，表现形式是css,我们更加关注的是**语义**
+​  html负责页面的结构，表现形式是css,我们更加关注的是**语义**
 
-​	lorem自动生成一文本
+​  lorem自动生成一文本
 
-
-
-#### 块元素
+### 块元素
 
 页面中独占一行的元素（block element）;
 
@@ -228,40 +200,32 @@ lang : 显示页面的语言,其中zh为中文,en为英文
 - \<h1> 标题标签
 - \<p> 段落标签
 
-
-
-​	块元素主要用于布局，块元素能放任何元素。
+  块元素主要用于布局，块元素能放任何元素。
 
 **常见的行类元素(内联元素):**
 
 - \<em>语气加强标签
 - \<strong>强调标签
 
-​	主要用来包裹文字
+​  主要用来包裹文字
 
-
-
-#### 属性：
+#### 属性
 
 分为两种存型的，还有一种是需要键值对型的，例如，audio的controls
 
 #### 转义字符
 
-​	有时我们要用特殊字符，需要用到这些实体，可以利用实体的语法：`&+实体的名字;`例如`&nbsp(空格);`  `&gt;`  `&lt`大于号和小于号
+​  有时我们要用特殊字符，需要用到这些实体，可以利用实体的语法：`&+实体的名字;`例如`&nbsp(空格);`  `&gt;`  `&lt`大于号和小于号
 
 #### 网页自动修正
 
-​	浏览器会自动纠正代码，例如**标签写在了html的外部，p标签里面包含了块级元素。**
-
-
+​  浏览器会自动纠正代码，例如**标签写在了html的外部，p标签里面包含了块级元素。**
 
 # css3
 
 **html控制结构，css层叠样式控制，js控制行为。**
 
 ## 常用的使用方式style属性
-
-
 
 1.所有标签中都可以用style样式
 
@@ -272,8 +236,6 @@ lang : 显示页面的语言,其中zh为中文,en为英文
 
 开发的时候不要使用**内联样式**，**内联样式值style写在标签里面。**
 
-
-
 2.内部样式表
 
 在head标签里面使用\<style>样式,**利用css选择器选中**.
@@ -282,14 +244,12 @@ lang : 显示页面的语言,其中zh为中文,en为英文
 
 3.外部样式表
 
-​	把样式写成css文件，然后用**link**标签引入，**可以被多文件复用**。
+​  把样式写成css文件，然后用**link**标签引入，**可以被多文件复用**。
 
 ```html
 <link rel="stylesheet" href="./style.css">
 stylesheet，表示样式表
 ```
-
-
 
 ## css选择器
 
@@ -310,7 +270,6 @@ stylesheet，表示样式表
 
   ```html
   #id{
-  	
   }
   用重复的id,都会变成红色，但是一般每个id都是不同的,js中选择id只会找一个元素，所以我们用class属性来应用于多个元素。
   ```
@@ -367,17 +326,17 @@ stylesheet，表示样式表
 
   ```html
   div > p > span{
-  	color: red;
+    color: red;
   }
   有> 只能逐层搜索
   
   div span{
-  	color: red;
+    color: red;
   }
   如果没有>,而是black，那么是指该标签下的所有子标签
   
   span{
-  	color: yellow;
+    color: yellow;
   }
   当三种同时存在时:
   1.div span;div > span 同级，去最后一次的样式
@@ -400,11 +359,11 @@ stylesheet，表示样式表
   ```html
   选择下一个兄弟;
   p + span{
-  	选择p下一个标签是span的span标签
+    选择p下一个标签是span的span标签
   }
   
   p ~ span{
-  	选择与p同级的所有的span标签。只有p后面的span才会被选择。
+    选择与p同级的所有的span标签。只有p后面的span才会被选择。
   }
   ```
 
@@ -456,25 +415,25 @@ stylesheet，表示样式表
 
    常见的伪类:
 
-   ​	:first-child 第一个元素
+   ​  :first-child 第一个元素
 
-   ​	:last-child最后一个元素
+   ​  :last-child最后一个元素
 
-   ​	:nth-child(k) 选中第k个子元素，
+     :nth-child(k) 选中第k个子元素，
 
-   ​		如果选择n，则全部选中,
+   ​    如果选择n，则全部选中,
 
-   ​		2n/even代表所有的偶数，
+   ​    2n/even代表所有的偶数，
 
-   ​		2n+1或者odd,所有的奇数.
+   ​    2n+1或者odd,所有的奇数.
 
     以上伪类主要**同一级别所有元素中进行排序**
 
-   ​	:first-of-type 
+   ​  :first-of-type 
 
-   ​	:last-of-type
+   ​  :last-of-type
 
-   ​	:nth-of-type
+     :nth-of-type
 
    以上伪类元素与上面的类似，不同的是,**他们只对同一类的元素进行排序**
 
@@ -490,10 +449,10 @@ stylesheet，表示样式表
 
    ```html
    a:link{
-   	color: red;
+    color: red;
    }没访问过的连接(所有的link)
    a:visited{
-   	color: blue;
+    color: blue;
    }访问过的连接
    :visited只能修改颜色，为了保护隐私,不让人很容易的知道。
    :hover 当鼠标移入的时候的式样，适用于多个标签
@@ -504,19 +463,19 @@ stylesheet，表示样式表
 
    伪元素表示的是一些并不真实的元素（特殊的位置，例如每段的第一个字母）,相当于系统自己加了一个标签,然后选中样式
 
-   ​	::开头
+   ​  ::开头
 
-   ​	::first-letter 第一个字母
+   ​  ::first-letter 第一个字母
 
-   ​	::first-line 第一行
+   ​  ::first-line 第一行
 
-   ​	:: selection 被选中的元素
+   ​  :: selection 被选中的元素
 
-   ​	::before 元素的开始,例如p中第一个字母前面的位置
+   ​  ::before 元素的开始,例如p中第一个字母前面的位置
 
-   ​	::after 元素的最后,最后一个字母之后的样式
+   ​  ::after 元素的最后,最后一个字母之后的样式
 
-   ​		before和after必须 和content结合使用，自己设定内容，且选不中
+   ​    before和after必须 和content结合使用，自己设定内容，且选不中
 
    ```css
            p::first-letter{
@@ -542,17 +501,12 @@ stylesheet，表示样式表
 **样式冲突**：通过**不同的选择器**选择了**相同**的元素，设置了**不同的样式**。
 
 优先级:
-
 **内联选择器: 1000**
-
 **id选择器: 100**
-
 **类或者伪类选择器: 10**
 
-**元素选择器: 1 **
-
-**统配选择器: 0 **
-
+**元素选择器: 1**
+**统配选择器: 0**
 **继承的样式没有优先级**
 
 当出现**复合选择器**的时候:我们**优先级相加**得出优先级,例如div#id ,但是优先级不会**跨域**。
@@ -560,8 +514,6 @@ stylesheet，表示样式表
 同级后出现的覆盖先出现的。
 
 !important:在样式后面加上!important，优先级最高。
-
-
 
 ## css语法
 
@@ -571,8 +523,6 @@ stylesheet，表示样式表
 
 声明块中，包含了对多`样式名: 样式值;`组成。
 
-## 
-
 ## 继承
 
 **大标签的样式可以继承到子标签**里面里面。
@@ -581,13 +531,9 @@ stylesheet，表示样式表
 
 如何**样式是否**能被继承:
 
-
-
 ## 注释
 
-/*  xxxx*/
-
-
+/*xxxx*/
 
 ## 单位
 
@@ -633,8 +579,6 @@ L 亮度，0%~100%
 
 A:透明度
 
-
-
 不同的颜色显示模型
 
 ```html
@@ -642,9 +586,10 @@ backgroup-color: hsl(0,100%,0%)
  hsla(0,100%,0%,透明度)
 ```
 
+
 # 页面的布局
 
-## 文档流：
+## 文档流
 
 - 网页是个多层结构
 
@@ -682,7 +627,7 @@ backgroup-color: hsl(0,100%,0%)
 - 内边距(padding)'
 - 外边距（盒子与盒子的距离，盒子的位置）
 
-### 2.盒子的属性：
+### 2.盒子的属性
 
 ```css
 .box{
@@ -757,17 +702,17 @@ backgroud-clip，限定background的范围。
 
 一个元素在其父元素中，**必须要满足上面七者和为父元素内容宽**。如果不满足，则称为过度约束，等式会自动调整。**会自动调整margin-right使其满足换行**；
 
- - 调整情况: 
+- 调整情况：
 
-   ​	**如果没有auto，调节margin-right**
+     **如果没有auto，调节margin-right**
 
-   ​	**这七个之里面有三个值可以设置成auto：width,margin-left,margin-right;有auto调整auto满足等式**
+     **这七个之里面有三个值可以设置成auto：width,margin-left,margin-right;有auto调整auto满足等式**
 
-   ​	width:auto，除去已经定义的的宽度，全部是width,默认是auto:
+   ​  width:auto，除去已经定义的的宽度，全部是width,默认是auto:
 
    ![image-20210510170242264](C:\Users\coder\Desktop\数模学习\image-20210510170242264.png)
 
-   ​	![image-20210510170259390](C:\Users\coder\Desktop\数模学习\image-20210510170259390.png)
+   ​  ![image-20210510170259390](C:\Users\coder\Desktop\数模学习\image-20210510170259390.png)
 
    **如果将一个宽度和外边距设置为auto,则宽度会最大，设置为auto的外边距自动为0.**
 
@@ -775,38 +720,30 @@ backgroud-clip，限定background的范围。
 
    **左右外间距为auto，居中**：margin: 0 auto,水平居中。
 
-   
-
    **margin可以是赋值使得等式满足**
-
-   
 
 ### 4.垂直方向上的布局
 
-​	**父元素大小没定的请款下，由他的子元素大小决定，子元素超过父元素大小溢出会**，
+​  **父元素大小没定的请款下，由他的子元素大小决定，子元素超过父元素大小溢出会**，
 
-​	**父元素有个属性overflow,解决溢出**
+​  **父元素有个属性overflow,解决溢出**
 
-##### overflow:
+#### overflow
 
 - visible: 可以看到溢出
 - hidden:溢出的内容隐藏，不可见
 - srcoll，生成滚动条，两个方向滚动条
 - auto ： 根据需要生成滚动条。
 
-##### overflow-x/overflow-y:
+##### overflow-x/overflow-y
 
-​	单独处理两个方向
-
-
+​  单独处理两个方向
 
 ##### 外边距的重叠:（需要相邻,垂直方向）
 
-
-
 - 兄弟元素
 
-​	上一个元素margin-button和下一个元素的margin-top会发生重叠现象，**选择较大的外边距，有负值反向移动，一正一负取两者的和。同号取较大值**
+​  上一个元素margin-button和下一个元素的margin-top会发生重叠现象，**选择较大的外边距，有负值反向移动，一正一负取两者的和。同号取较大值**
 
 - 父子元素
 
@@ -827,13 +764,11 @@ backgroud-clip，限定background的范围。
 
 ### 6.行内元素\<a>
 
-​	行内元素不支持宽度和高度，如果一定要设置，转换成块属性。（display属性）
+​  行内元素不支持宽度和高度，如果一定要设置，转换成块属性。（display属性）
 
-​	行内元素换行会自动在html中添加一个空格
+​  行内元素换行会自动在html中添加一个空格
 
-​	**行内元素支持设置margin和padding,但content的大小不能由自己决定**
-
-
+​  **行内元素支持设置margin和padding,但content的大小不能由自己决定**
 
 ### display
 
@@ -855,24 +790,22 @@ backgroud-clip，限定background的范围。
 
 ### 7.盒子的大小box-sizing
 
-​	box-sizing指定height和width代表谁的大小
+  box-sizing指定height和width代表谁的大小
 
 - box-sizing: content-box，默认，宽高指内容区的大小
 - box-sizing: border-bos , 宽高指定为边框的大小
 
 ### 8.轮廓，阴影和圆角outline,box-shadow(边框常用属性) 
 
-​	两者只显示效果，**不影响盒子的大小和整体布局**
+​  两者只显示效果，**不影响盒子的大小和整体布局**
 
-​	outline的用法和border相似
+​  outline的用法和border相似
 
-​	box-shadow: 10px 10px 50px rgba; 水平偏移量，垂直偏移量，模糊半径(越大越模糊)，颜色。
+​  box-shadow: 10px 10px 50px rgba; 水平偏移量，垂直偏移量，模糊半径(越大越模糊)，颜色。
 
-​	border-radius: 10px;圆角。
+​  border-radius: 10px;圆角。
 
-​		类似的:border-top-left-radius,border-top-right-radius,border-botton-left....
-
-
+​    类似的:border-top-left-radius,border-top-right-radius,border-botton-left....
 
 ## 浏览器的默认样式
 
@@ -883,8 +816,6 @@ backgroud-clip，限定background的范围。
 ### ul中的属性
 
 **list-style:列表的样式，**![image-20210510193810309](C:\Users\coder\Desktop\数模学习\image-20210510193810309.png)none消除前面的点。
-
-
 
 消除浏览器的格式
 
@@ -897,7 +828,7 @@ backgroud-clip，限定background的范围。
 
 ## 02.浮动float
 
-特点： 
+特点：
 
 - 设置浮动后从文档流脱离，不再占文档流中的位置。
 
@@ -906,15 +837,9 @@ backgroud-clip，限定background的范围。
 - 浮动元素无法占其他非浮动块元素的区域
 - **浮动元素不会超过前面的兄弟浮动元素**,不能排布在前面元素的前面。
 
-
-
-
-
 ### 1. 浮动元素和文字
 
 图片不会盖住文字，我们可以用**来让文字环绕图片**
-
-
 
 ### 2.元素脱离文档流后的特点
 
@@ -923,8 +848,6 @@ backgroud-clip，限定background的范围。
 - 不在独占一行
 - **大小为内容撑开的大小，或者 自己设置的大小**
 - 不在区**分块元素和行类元素，可以之际设置大小**
-
-
 
 ### 3.高度塌陷问题
 
@@ -956,8 +879,6 @@ backgroud-clip，限定background的范围。
 
 **清楚浮动元素对当前元素的影响。** **清楚浮动元素对下方兄弟元素的影响。**
 
-
-
 - clear: left,消除左边浮动元素对当前元素的影响
 - clear: right，消除右边浮动元素对当前元素的影响
 - both 两侧
@@ -966,11 +887,7 @@ backgroud-clip，限定background的范围。
 
 ### 5.利用伪元素(::after)解决高度塌陷	
 
-​		我们在内容区的**最后加上空内容div,来撑开内容区**,但是伪元素::after默认增加的是块内元素,我们可以通过display来修改展示的形式,并用clear清楚浮动元素对下方元素的影响。
-
-
-
-
+​    我们在内容区的**最后加上空内容div,来撑开内容区**,但是伪元素::after默认增加的是块内元素,我们可以通过display来修改展示的形式,并用clear清楚浮动元素对下方元素的影响。
 
 ```html
     <style>
@@ -999,12 +916,10 @@ backgroud-clip，限定background的范围。
         <div class="box2"></div>
         <!-- <div class="box2 box3"> 
         </div> -->
-	    </div>
-```
+      </div>
 
-​	**也可以解决外边距重叠的问题。**
-
-    <style>
+​  **也可以解决外边距重叠的问题。**
+<style>
         .box1{
             width: 200px;
             height: 200px;
@@ -1021,6 +936,7 @@ backgroud-clip，限定background的范围。
             margin-top: 100px;
         }
     </style>
+```
 
 ```html
 <div class="box1">
@@ -1028,15 +944,13 @@ backgroud-clip，限定background的范围。
 </div>
 ```
 
-
-
 综合可以用clearfix
 
 ```html
 .clear::before,.clear::after{
-	content:'';
-	display: table;
-	clear:both;
+  content:'';
+  display: table;
+  clear:both;
 }
 ```
 
@@ -1060,11 +974,11 @@ table:块级元素，空的时候不占内容
 
 ### 1.相对定位relative
 
-​		**定位位置为元素原本的位置**,进行相对移动。
+​   **定位位置为元素原本的位置**,进行相对移动。
 
-​		**相对定位会提升元素所在的层级(浮动在上层)，但不脱离文档流，且不改变元素的性质（块级元素依旧是块级元素）。**
+   **相对定位会提升元素所在的层级(浮动在上层)，但不脱离文档流，且不改变元素的性质（块级元素依旧是块级元素）。**
 
-​		元素设置相对定位以后，**不设置偏移量元素不会发生任何变化**。如何设置偏移量(offset)。
+​   元素设置相对定位以后，**不设置偏移量元素不会发生任何变化**。如何设置偏移量(offset)。
 
 - 偏移量(offset)下面都是单独的属性，**需要提前开启定位**
 
@@ -1088,7 +1002,7 @@ table:块级元素，空的时候不占内容
 
 ### 2.绝对定位absolute
 
-#### 特点：
+#### 特点
 
 - **定位位置为本身的包含块**
 
@@ -1097,13 +1011,13 @@ table:块级元素，空的时候不占内容
 - 从文档流中脱离，下面的元素上浮被遮住
 - 会改变元素的性质（脱离文档流），变成行内块
 
-#### 包含块（containing block）：
+#### 包含块（containing block）
 
 - **正常为离当前元素最近的祖先块元素**。
 - 在开启绝对定位时，包含块为**离他最近的**开启了**定位的祖先元素**。
 - 如果所有祖先元素**都没**开启定位，则相对于**根元素**定位
 
-#### 偏移量：
+#### 偏移量
 
 - top
 - botton
@@ -1112,11 +1026,9 @@ table:块级元素，空的时候不占内容
 
 ### 03固定定位fixed
 
-​	是一种**特殊的绝对定位**，唯一不同的是：**永远参考于视口(可视窗口)进行定位。**
+​  是一种**特殊的绝对定位**，唯一不同的是：**永远参考于视口(可视窗口)进行定位。**
 
-​	**当下拉滚动条时，元素跟着移动。**
-
-
+​  **当下拉滚动条时，元素跟着移动。**
 
 ### 04粘滞定位sticky
 
@@ -1124,29 +1036,21 @@ table:块级元素，空的时候不占内容
 
 **当上下滚动到特定的位置的时候不在变化。**
 
-
-
 ### 05_绝对定位
 
-​	绝对定位在原本的宽度等式中添加了两个新的内容
+​  绝对定位在原本的宽度等式中添加了两个新的内容
 
 ```bash
 left+margin-left+padding-left+content+padding-right-margin-right+right = 所包含块的内容宽度(一般和相对定位一起使用)
 ```
 
-
-
-​	**在七个属性中能设置默认值的是left+right,margin,content。当left+right默认为auto，此时letf为0，right为最大值，当margin两个默认值时，居中，当left+right和margin都为auto时，前者的样式优先级大于后者。当三个一起的时候，width的auto有效。**
-
-
+​  **在七个属性中能设置默认值的是left+right,margin,content。当left+right默认为auto，此时letf为0，right为最大值，当margin两个默认值时，居中，当left+right和margin都为auto时，前者的样式优先级大于后者。当三个一起的时候，width的auto有效。**
 
 ### 06_层级设置z-index
 
 - z-index相同的时候，hmtl文件中后写的元素覆盖先写的元素
 - z-index不同时，越大，优先显示
 - 子元素z-index继承父元素的z-index且一定比父元素大一些
-
-
 
 ## 4.字体(font)与背景(backgroud)
 
@@ -1161,10 +1065,10 @@ font-size
 
 <!--设置字体-->
 font-family:(多值属性,从前往后挑选可用的)
-	可选值:
-	- serif : 衬线字体 含有笔锋
-	- sans-serif: 非衬线字体
-	- monospace: 等宽字体 每个字母的宽度相同
+可选值:
+  - serif : 衬线字体 含有笔锋
+  - sans-serif: 非衬线字体
+  - monospace: 等宽字体 每个字母的宽度相同
 
 
 <！--简写设置字体*/-->
@@ -1191,18 +1095,18 @@ font-style: normal/italic;正常(默认值)/斜体
 
 ```css
 @font-face{
-	font-family: "(字体名字)myfont";
+  font-family: "(字体名字)myfont";
     <!--字体路径，格式包括了，ttf，woff,woff2,truetype等， -->
     src: url('./font/name.ttf') format("ttf")[,
         url() format()];
 }
 ```
 
-​	**src为多值属性，为的是让浏览器可以解析，从前往后选一个可行的。**
+​  **src为多值属性，为的是让浏览器可以解析，从前往后选一个可行的。**
 
 ### 3.图标字体(iconfont)
 
-​	最常用的网站为阿里的图标库，阿里巴巴矢量图标库，我们先介绍font awesome。
+​  最常用的网站为阿里的图标库，阿里巴巴矢量图标库，我们先介绍font awesome。
 
 步骤：
 
@@ -1214,7 +1118,7 @@ font-style: normal/italic;正常(默认值)/斜体
 
 - \<i>标签+class引用
 
-  class格式 ： `fas/fab 具体图标` 
+  class格式 ： `fas/fab 具体图标`
 
   ```html
   <i class="fas fa-bell"></i>
@@ -1224,7 +1128,7 @@ font-style: normal/italic;正常(默认值)/斜体
 
 - 通过伪元素实现
 
-  ​	每个图标字体都有编码，可以通过转义图标字体的编码实现
+  ​  每个图标字体都有编码，可以通过转义图标字体的编码实现
 
   ```html
       <style>
@@ -1258,8 +1162,6 @@ font-style: normal/italic;正常(默认值)/斜体
   
   ```
 
-  
-
 ### 4.[阿里字体库](https://www.iconfont.cn/)
 
 下载出来
@@ -1273,9 +1175,9 @@ font-style: normal/italic;正常(默认值)/斜体
 
 ### 5.行高line-height
 
-​	通过line-height来设置行高，如果是个不带单位的数，将是字体的倍数。默认值为normal
+  通过line-height来设置行高，如果是个不带单位的数，将是字体的倍数。默认值为normal
 
-​	所有的字体都有**一个字体框**，行高会在字体框上下平均分布。
+​  所有的字体都有**一个字体框**，行高会在字体框上下平均分布。
 
 ### 6.文本的样式
 
@@ -1296,7 +1198,7 @@ top/bottom： 顶部/底部对齐，对齐每一行的顶部和底部
 100px
 ```
 
-​		**图片也是默认是沿着基线对齐，我们可以用verticle-align解决**
+​    **图片也是默认是沿着基线对齐，我们可以用verticle-align解决**
 
 **文本修饰：** text-decoration
 
@@ -1309,7 +1211,7 @@ top/bottom： 顶部/底部对齐，对齐每一行的顶部和底部
 **处理空白：**white-space
 
 - normal  正常, 不够最后的自动换行
-- nowrap 不换行， 
+- nowrap 不换行，
 - pre： **保留html中所有空格**，默认的html中多个空格自动合并成一个空格
 
 **文本超出div处理**: text-overflow:
@@ -1320,7 +1222,7 @@ top/bottom： 顶部/底部对齐，对齐每一行的顶部和底部
 
 ## 5.背景
 
-### 1.常见属性
+### 5.1常见属性
 
 - background-imgae:背景图片,
   - 背景 图片小于元素，会自动铺满
@@ -1354,15 +1256,13 @@ background-position: top center;
 background-position: 10px 10px;
 ```
 
-​					对于backgroud-size如果我们设置一个值，另一个值为auto，那么auto的值会自动适应。，可能导致的结果就是适应的维度超出背景框的范围。所以还有一个属性contain 图片的比例不变，完整的显示在背景框中。
+​  对于backgroud-size如果我们设置一个值，另一个值为auto，那么auto的值会自动适应。，可能导致的结果就是适应的维度超出背景框的范围。所以还有一个属性contain 图片的比例不变，完整的显示在背景框中。
 
-- backgroud-attachment: 背景是否与文字的吸附方式，可选值如下: 
+- backgroud-attachment: 背景是否与文字的吸附方式，可选值如下:
   - fixed:  固定以后可以通过xxx- position调整位置
   - scroll: 随着文字滚动。
   - 当content-box的内容超过内容盒子本身的大小的时候，overflow属性可以设置滚动条。
 - 统一简写属性background：可以填上面的所有属性的值，为了加以区分，我们规定背景的位置和大小要写成如下的样式 center center/contain， 背景的源点和背景的显示范围先写原点的范围,再写一个背景的范围。
-
-
 
 样例：
 
@@ -1373,10 +1273,27 @@ background-position: 10px 10px;
 ```
 
 ## 6.背景颜色渐变
+
+### 6.1 线性渐变
+
   使用的属性background-image: linear-gradient(dir,color1,color2,color3....)
+
 - dir 可以是to right
 - dir 默认是从上向下
 - dir 可以设置成度数： 20deg deg表示度数
 - 渐变可以指定多个元素，每个元素默认平均分布
 
+  同时我们也可以设置渐变的宽度。例如：
 
+```css
+  background-image: linear-gradient(dir,color1 width,color2 width2)
+  /*width1代表渐变的起始位置，前面的是纯色,color2从width2开始是纯color2,上面是渐变色。只有第一个颜色前面是纯色，因为上面没有颜色。*/
+```
+
+  下面我们介绍重复的线性渐变。值为repeating-linear-gradient(red 50px,yellow 100px),说明50是纯红，100是纯黄，渐变色的宽度为50，其他地方会自动平铺，因此，它的效果其实和background-image: repeating-linear-gradient(red,yellow,50)效果相同。
+
+### 6.2径向渐变
+
+  径向渐变也是background-image的一个属性值，radial-gradient(red,yellow),颜色从中心向外变化。
+  径向渐变的长短轴为默认为背景图的长短轴，，超出半径的是纯色，我们也可以自己调节半径。
+  background-image: radial-gradient(100px 200px,red,yellow)先设置宽，再设置高。
