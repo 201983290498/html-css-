@@ -1297,3 +1297,13 @@ background-position: 10px 10px;
   径向渐变也是background-image的一个属性值，radial-gradient(red,yellow),颜色从中心向外变化。
   径向渐变的长短轴为默认为背景图的长短轴，，超出半径的是纯色，我们也可以自己调节半径。
   background-image: radial-gradient(100px 200px,red,yellow)先设置宽，再设置高。
+  还有些关键字，例如我们渐变的中心不在中心点，有所偏移，这时候我们可以限定渐变的范围，就是大小既可以是一个元组，或者是一个英文关键字，可选值:
+
+- closest-side,渐变到最近的边
+- closeet-corner,渐变到最近的交
+- farthest-side,远边
+- farthest-corner,远角
+
+  位置的关键字:top,button,left,right
+
+  
