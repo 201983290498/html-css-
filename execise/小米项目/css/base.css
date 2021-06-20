@@ -1,0 +1,32 @@
+/* 放所有页面公共的css */
+
+/* 撑开浮动元素,因为浮动元素不在div里面，所以我们可以在前面和后面添加文字元素，就能撑开样式 */
+.clearfix::before,
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+body{
+    /*设置小米的字体*/
+    font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+    color: #333;
+    background-color: #fff;
+    /* body的最小宽度为1225px,当比1226还小的时候就不会在缩小了 */
+    min-width: 1226px;
+}
+
+/* 设置一个类设置中间容器即屏幕的宽度 */
+.w{
+    /* 固定宽度,居中 */
+    width: 1226px;
+    margin: 0 auto;
+}
+/* 去除a的下划线 */
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+
