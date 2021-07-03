@@ -113,9 +113,7 @@ href: 超链接的地址，
 
 可以使用**javascript:void(0);作为href的内容**，不会有任何作用
 
-```
 
-```
 
 **text-decoration: none,** 将超链接的下划线去了
 
@@ -148,6 +146,34 @@ color: 设置字体
 将图片使用base64来编码，转换成字符，然后通过s**rc=文字**引入,一般只有网页需要一起加载的时候才这么用。
 
 **通过网站将图片转成base64.**
+
+### 下载图片
+
+​	下载图片的方式是通过a标签中的download的属性来实现，这样点了以后就可以下载图片。有三种a标签的形式。
+
+```html
+<a href="static/img/1.jpg" download="name"></a>
+<a href="static/img/1.jpg" download>不指定名字名字默认为超链接最后的字段</a>
+<a href="base64.." download>href的内容可以是base64</a>
+```
+
+​	下载图片的实例代码：
+
+```js
+// 生成一个a元素
+var a = document.createElement('a')
+// 创建一个单击事件
+var event = new MouseEvent('click')
+// 将a的download属性设置为我们想要下载的图片名称，若name不存在则使用‘下载图片名称’作为默认名称
+a.download = name || 'one' // one是默认的名称
+// 将生成的URL设置为a.href属性,其实是base64编码
+a.href = url
+console.log(url);
+// 触发a的单击事件
+a.dispatchEvent(event)
+```
+
+
 
 ### 内联框架\<iframe>
 
@@ -289,7 +315,7 @@ stylesheet，表示样式表
 
   ```html
   .class{
-
+  
   }
   通过class使用多个样式格式如下
   <span class="blue red"></span>
@@ -298,7 +324,7 @@ stylesheet，表示样式表
 
   ```html
   *{
-
+  
   }
   作用于所有元素。
   ```
@@ -311,12 +337,12 @@ stylesheet，表示样式表
 
   ```css
   div.red{
-
+  
   }
   //同时是div使用了redclass
   选择同时符合多个条件的元素。并列在一起代表同时满足
   .c.b.a{
-
+  
   }
   只有同时用三个类的才可以选择：
   条件并列时的顺序为:标签名+id+class,
@@ -338,12 +364,12 @@ stylesheet，表示样式表
     color: red;
   }
   有> 只能逐层搜索
-
+  
   div span{
     color: red;
   }
   如果没有>,而是black，那么是指该标签下的所有子标签
-
+  
   span{
     color: yellow;
   }
@@ -352,7 +378,7 @@ stylesheet，表示样式表
   2.span,简单选择器的优先级低于关系选择器
   并列选择器和后代选择器并列锁定：
   div.box > span
-
+  
   ```
 - 2.后代选择器
 
@@ -368,7 +394,7 @@ stylesheet，表示样式表
   p + span{
     选择p下一个标签是span的span标签
   }
-
+  
   p ~ span{
     选择与p同级的所有的span标签。只有p后面的span才会被选择。
   }
@@ -380,7 +406,7 @@ stylesheet，表示样式表
 
   ```html
   (*)[attri]{
-
+  
   }
   ```
 - [属性名=属性值]xua'z
@@ -500,9 +526,9 @@ stylesheet，表示样式表
                content: 'huangjingwang';
                color: aqua;
            }通过css往元素中加元素,是个行内元素
-
+   
    可以设置纵向长度，无法设置高度
-
+   
    ```
 
 ## 选择器的权重
@@ -1167,7 +1193,7 @@ font-style: normal/italic;正常(默认值)/斜体
   fab为font-family的css表示，是用来规定字体类的
   <span class="fas"></span>
   通过实体来使用 &#x图标编码
-
+  
   ```
 
 ### 4.[阿里字体库](https://www.iconfont.cn/)
@@ -1422,7 +1448,6 @@ background-image: radial-gradient(100px 200px,red,yellow)先设置宽，再设�
  我们可以设置body的最小宽度min-width,避免随着浏览器大小移动，导致排版出现问题
 
 
- 
 
 # 9.less
 
