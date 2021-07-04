@@ -1,54 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../reset.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">　　
+    <link rel="stylesheet" href="../reset.css">　
     <link rel="stylesheet" href="../css/static/fa/css/all.css">
+    <title>电影卡片</title>
     <style>
-        .outer{
+        .outer {
             width: 240px;
-            margin: 0 auto;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            margin: 100px auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .3);
         }
-        .img-wrapper{
-            width: 240px;
+
+        .img-wraper img {
+            width: 100%;
+            vertical-align: bottom;
+        }
+
+        .info,
+        .star-warper {
+            padding: 0 18px;
+            color: #acaaaa;
+            font-size: 14px;
+        }
+
+        .info .title {
+            color: #717171;
+            font-size: 18px;
+            margin: 13px 0 15px 0;
+        }
+
+        .info .category {
+            color: #acaaaa;
+            font-size: 14px;
+        }
+
+        .info .category i {
+            margin-left: 4px;
+            margin-right: 7px;
+        }
+
+        .info .briefintro {
+            margin-top: 18px;
+            margin-left: 4px;
+            line-height: 20px;
+            margin-bottom: 18px;
+        }
+
+        .star-warper {
+            height: 46px;
+            border-top: 1px solid #e9e9e9;
+            line-height: 46px;
+        }
+
+        .star {
+            float: left;
+        }
+
+        .fa-weibo {
+            float: right;
+            line-height: 46px;
+        }
+
+        .light {
+            color: green;
         }
     </style>
 </head>
+
 <body>
-    <!-- 创建一个外层容器 -->
     <div class="outer">
-        <!-- 创建图片容器 -->
-        <div class="img-wrapper">
-            <img src="../execise/pic/1.png" alt="电影图片">
+        <div class="img-wraper">
+            <img src="./pic/1.png" alt="">
         </div>
-        <!-- 创建一个内容区 -->
         <div class="info">
             <h2 class="title">
                 动画电影
             </h2>
             <h3 class="category">
+                <i class="fas fa-map-marker-alt"></i>
                 动画
             </h3>
-            <p class="intre">
-                这是迪斯尼的一部电影，非常非常好看。
+            <p class="briefintro">
+                这是一部迪士尼的电影，非常非常的好看！！！
             </p>
         </div>
-        <!-- 创建一个评价容器容器 -->
-        <div class="star-wrapper">
-            <ul class="star-wrapper">
-                <!-- 利用font-awesome -->
+        <div class="star-warper">
+            <ul class="star">
                 <li class="fas fa-star light"></li>
                 <li class="fas fa-star light"></li>
                 <li class="fas fa-star"></li>
                 <li class="fas fa-star"></li>
             </ul>
-            <span class="fab fa-weibo"></span>
+            <span class="fab fa-weibo">
+
+            </span>
         </div>
-        
     </div>
 </body>
+
 </html>
